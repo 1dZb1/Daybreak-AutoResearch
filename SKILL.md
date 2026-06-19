@@ -49,6 +49,21 @@ Do not use Daybreak for a short answer, a one-off literature search, a tiny code
 7. **Grounded means traceable** - every nontrivial claim must trace to an external artifact. Ungrounded claims are held, not published.
 8. **Discovery means pressure, not decoration** - a finding is discovery-grade only if it changes the backbone, closes a gap, resolves a contradiction, opens a testable hypothesis, or falsifies a tempting path.
 
+## Autonomy Boundaries
+
+Zero interaction is not unlimited authority. "Ready means execute" covers research moves — submit, resubmit, fix, monitor, continue. It does not cover actions whose damage outlives the run.
+
+Before the run starts, classify the tools it can reach. Under zero interaction, these action classes still require a pre-authorized allowlist or a human gate:
+
+- moving money or committing spend beyond the run's own compute;
+- sending or publishing outside the run (email, message, post, third-party write);
+- deleting or overwriting data that is not the run's own scratch state (drop, truncate, mass-update, history rewrite);
+- deploying, merging to a protected branch, or changing production;
+- changing access, credentials, permissions, or security settings;
+- moving data across a trust boundary.
+
+Everything else proceeds without asking — that is the point of the protocol.
+
 ## The Two Axes
 
 | Axis | Question | Failure if missing | Daybreak mechanism |
