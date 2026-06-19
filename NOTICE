@@ -1,0 +1,34 @@
+Daybreak AutoResearch
+Copyright 2026 Daybreak AutoResearch contributors
+
+This product is released under the Apache License, Version 2.0.
+
+Daybreak AutoResearch is an agent-agnostic autonomous research protocol
+packaged here as a Codex-compatible skill.
+
+This project is an adapted and extended version of the open-sourced
+Deli AutoResearch / Deli_AutoResearch framework originally created by
+Deli Chen (DeepSeek).
+
+Original references:
+- https://x.com/victor207755822
+- https://victorchen96.github.io/auto_research/framework.html
+
+The Daybreak adaptation preserves the reliability spine of Deli AutoResearch
+and adds STORM-style multi-perspective discovery, retrieval grounding, source
+and claim ledgers, gap / contradiction / hypothesis tracking, a persistent
+backbone synthesis layer, sufficiency-based completion, and the Discovery Tail
+Pass.
+
+The STORM-style discovery layer is inspired by Stanford OVAL's STORM project:
+- https://storm-project.stanford.edu/research/storm/
+- https://github.com/stanford-oval/storm
+- https://arxiv.org/abs/2402.14207
+
+This repository is not affiliated with Deli Chen, DeepSeek, Stanford OVAL, or
+the STORM authors. Names and links are used only for attribution and lineage.
+
+At packaging time, the upstream Deli AutoResearch skill was publicly announced
+as open source, but no explicit upstream license type was located in the
+framework page or visible repository paths. If an upstream license is later
+published, this repository should be reviewed for compatibility.

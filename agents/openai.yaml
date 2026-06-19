@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daybreak AutoResearch"
+  short_description: "Autonomous grounded research loops"
+  default_prompt: "Use $daybreak-autoresearch to run a grounded autonomous research project with perspectives, state files, and verification."

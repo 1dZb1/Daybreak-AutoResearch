@@ -1,0 +1,20 @@
+cff-version: "1.2.0"
+message: "If Daybreak AutoResearch helps your work, please cite this repository and preserve the Deli AutoResearch and STORM attributions."
+title: "Daybreak AutoResearch"
+type: software
+authors:
+  - name: "Daybreak AutoResearch contributors"
+date-released: "2026-06-19"
+license: "Apache-2.0"
+abstract: "An agent-agnostic autonomous research protocol for long-horizon, grounded, multi-perspective investigation, packaged as a Codex-compatible skill and adapted from Deli AutoResearch with STORM-style perspective coverage and a Discovery Tail Pass."
+keywords:
+  - autonomous research
+  - agent-agnostic
+  - agent protocol
+  - agent skill
+  - long-horizon agents
+  - STORM
+  - multi-perspective question asking
+  - retrieval grounding
+  - discovery
+  - Codex
