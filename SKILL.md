@@ -44,10 +44,11 @@ Do not use Daybreak for a short answer, a one-off literature search, a tiny code
 2. **Ready means execute** - if setup is complete, start the run, submit the job, start the monitor, or continue the next iteration. Do not ask whether to proceed.
 3. **Callback means report-alive** - after any callback or resumed heartbeat, first update `last_seen`, then check liveness and restart failed loops if needed.
 4. **State lives in files** - progress, claims, sources, perspectives, and decisions live in `state/` and `logs/`, not in conversation memory.
-5. **Fresh sessions over resume** - each work iteration starts with curated state injection; avoid accumulating stale context.
-6. **Guardian and worker stay separate** - a heartbeat patrol may check liveness, restart, or nudge; it does not silently do the worker's research or rewrite its state.
-7. **Grounded means traceable** - every nontrivial claim must trace to an external artifact. Ungrounded claims are held, not published.
-8. **Discovery means pressure, not decoration** - a finding is discovery-grade only if it changes the backbone, closes a gap, resolves a contradiction, opens a testable hypothesis, or falsifies a tempting path.
+5.  **The working goal stays explicit** - at startup, write the current goal; after each meaningful evidence shift, pivot, scope change, or completion check, update it. Each update must say how it moves the run closer to closing the original goal; otherwise mark it as `scope_change`, `offshoot`, or `blocked`, not ordinary progress. A run without a live goal becomes motion, not research.
+6. **Fresh sessions over resume** - each work iteration starts with curated state injection; avoid accumulating stale context.
+7. **Guardian and worker stay separate** - a heartbeat patrol may check liveness, restart, or nudge; it does not silently do the worker's research or rewrite its state.
+8. **Grounded means traceable** - every nontrivial claim must trace to an external artifact. Ungrounded claims are held, not published.
+9. **Discovery means pressure, not decoration** - a finding is discovery-grade only if it changes the backbone, closes a gap, resolves a contradiction, opens a testable hypothesis, or falsifies a tempting path.
 
 ## Autonomy Boundaries
 
