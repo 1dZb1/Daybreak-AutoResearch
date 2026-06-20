@@ -229,6 +229,13 @@ Each entry needs:
 id / perspective / claim / evidence / why it matters / falsifier / next test / backbone impact
 ```
 
+Each active hypothesis must be meaning-expanded, not a one-sentence label. State
+the proposed mechanism or relation, why current evidence suggests it, where it
+should and should not hold, what it would explain or compress in the backbone,
+the concrete falsifier or prediction, the next test, and how testing it moves
+the original goal closer to closure. If it cannot be expanded this far, record
+it as a weak lead or gap, not as an active hypothesis.
+
 A hypothesis without a falsifier is only an idea. Keep it, but do not promote it as a finding.
 
 ### 6. Reconcile Into The Backbone
