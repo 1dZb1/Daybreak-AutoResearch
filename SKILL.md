@@ -206,7 +206,7 @@ Before promoting a finding, run a small tail pass:
 3. **Transfer structure** - import the relational skeleton of a distant domain, not its surface metaphor. Ask what this problem is isomorphic to far away.
 4. **Diverge before judging** - create several genuinely different candidate moves, including at least one low-probability move. Prune only after the spread exists.
 5. **Compress** - prefer the candidate that explains more with fewer principles, unifies two things treated separately, or makes the backbone shorter.
-6. **Try to kill it** - derive one concrete, checkable consequence and attack it with sources, data, code, logs, experiments, or a focused adversarial pass.
+6. **Try to disprove it** - derive one concrete, checkable consequence and attack it with sources, data, code, logs, experiments, or a focused disconfirming pass.
 7. **Carry the residual** - write unresolved misfits as live anomalies for the next iteration instead of closing them as "interesting but unclear."
 
 Tail candidates are not discoveries. They remain search candidates until grounded, compressed, and attacked by a real check.
