@@ -447,6 +447,83 @@ Use subagents when they materially reduce uncertainty, time, risk, verification 
 - Deepen only when an under-supported claim requires it.
 - Escalate external dependency failures with a report; do not abandon silently.
 
+## High-Cost Goal-Driven Experimental Work
+
+Use this section when a run is trying to improve a concrete target under
+nontrivial cost, risk, quality, safety, or resource constraints. This includes
+performance optimization, model or system research, kernels, compilers,
+numerical methods, simulations, laboratory-style experiments, product
+experiments, and any autonomous loop where each trial consumes meaningful time,
+money, compute, attention, or trust.
+
+In this mode, the user's accepted goal metric is sovereign. Supporting work can
+be valuable, but it is not progress by itself.
+
+Progress is only one of:
+
+- a new accepted improvement on the primary metric under comparable conditions;
+- a reproduced result that raises confidence in an accepted improvement;
+- closure of a named blocker explicitly required before the primary metric can
+  move;
+- a bounded negative result that kills a tempting branch and materially narrows
+  the remaining search space.
+
+Everything else is support work, evidence, or bookkeeping.
+
+Before any costly experiment, write an experiment admission ticket:
+
+```text
+primary_metric:
+accepted_baseline:
+target_or_threshold:
+invariants_that_must_not_degrade:
+hypothesis:
+mechanism:
+expected_effect_size:
+affected_system_share:
+why_this_can_move_the_goal:
+falsifier:
+stop_rule:
+cost_or_risk:
+decision_that_this_run_will_change:
+```
+
+If the experiment cannot explain how it could plausibly move the accepted goal
+metric, downgrade it to diagnostic or support work and do not present it as
+progress.
+
+After every experiment, record exactly one decision:
+
+```text
+promote / reproduce / reject / close_branch / change_layer / continue_support_only
+```
+
+A branch should close when close variants fail repeatedly, when its maximum
+plausible effect is too small, when it violates required invariants, or when it
+requires more owner steering than the autonomous run was meant to need.
+
+Comparable measurement matters. A result cannot be promoted if workload,
+inputs, environment, limits, quality gates, safety constraints, or evaluation
+criteria changed in a way that makes the primary metric incomparable.
+
+Infrastructure, dashboards, logs, guards, documentation, wrappers, and
+instrumentation are not progress unless they directly enable a named accepted
+experiment or close a blocker recorded in the current goal.
+
+After context compression or resume, recover:
+
+- original goal;
+- current accepted baseline;
+- primary metric;
+- required invariants;
+- closed branches;
+- rejected mechanisms;
+- current causal model;
+- next allowed decision;
+- owner limits and attention budget.
+
+Do not restart from a nearby idea simply because it is visible.
+
 ## What An Iteration Produces
 
 Each iteration should leave a small, inspectable trail:
